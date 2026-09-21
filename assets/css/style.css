@@ -221,3 +221,26 @@ section[id] { scroll-margin-top: calc(var(--header-height) + 1rem); }
 /* Linked publication titles get a sliding underline. */
 a.pub-title { color: var(--ink); text-decoration: none; background-image: linear-gradient(var(--accent), var(--accent)); background-size: 0% 1.5px; background-position: 0 100%; background-repeat: no-repeat; transition: background-size .2s, color .2s; }
 a.pub-title:hover, a.pub-title:focus-visible { color: var(--accent); background-size: 100% 1.5px; }
+
+/* ------------------------------------------------- public repo listing -- */
+
+.subhead { font-family: var(--serif); font-size: 1.5rem; font-weight: 700; margin: 3rem 0 .35rem; padding-top: 2.4rem; border-top: 1px solid var(--rule); }
+.repo-status { display: inline-flex; align-items: center; gap: .42rem; margin: 0 0 1.4rem; color: var(--ink-soft); font-size: .76rem; font-weight: 650; }
+.repo-status::before { content: ""; width: .52rem; height: .52rem; flex: 0 0 auto; border-radius: 50%; background: #a7a198; }
+.repo-status.is-live::before { background: #159a7d; box-shadow: 0 0 0 4px rgba(21,154,125,.12); }
+
+.repo-list { list-style: none; margin: 0; padding: 0; }
+.repo-list li { border-top: 1px solid var(--rule); padding: 1.15rem 0; margin: 0; }
+.repo-list li:first-child { border-top: 0; padding-top: 0; }
+.repo-row-head { display: flex; align-items: baseline; gap: .65rem; flex-wrap: wrap; margin-bottom: .3rem; }
+.repo-link { font-family: var(--serif); font-weight: 700; font-size: 1.12rem; color: var(--accent); text-decoration: none; }
+.repo-link:hover { text-decoration: underline; }
+.repo-lang { font-size: .72rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-soft); background: var(--bg-alt); border: 1px solid var(--rule); border-radius: 99px; padding: .14rem .6rem; }
+.repo-stars { font-size: .78rem; font-weight: 650; color: var(--gold); }
+.repo-updated { font-size: .75rem; color: #8b8478; margin-left: auto; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.repo-list p { margin: 0; color: var(--ink-soft); font-size: .93rem; max-width: 80ch; }
+
+@media (max-width: 720px) {
+  .repo-updated { margin-left: 0; width: 100%; }
+  .subhead { margin-top: 2.2rem; padding-top: 1.8rem; }
+}

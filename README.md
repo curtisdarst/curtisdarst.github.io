@@ -25,6 +25,24 @@ To add a role, copy an `<li class="role">` block in `#experience`. For a project
 copy a `.repo-card`. Use `<a>` when it links somewhere, `<article>` when it
 doesn't. Talks and posts are `<li>` entries in the `.pub-list`.
 
+## Public repository list
+
+The bottom of `#projects` lists public repos from `github.com/curtisdarst`.
+The `<ul id="repo-list">` in `index.html` holds a snapshot, so the section
+renders without JavaScript. On load, `refreshRepos()` in `assets/js/script.js`
+asks the GitHub API for the current set and replaces it. If that call fails,
+offline, rate limited, API down, the snapshot stays and the status line above
+the list says so.
+
+Forks, archived repos, and private repos are filtered out automatically. Two
+more are hidden by name in `REPO_EXCLUDE`: this site's own repo, and
+`github-for-developers-7`, a course exercise with no description. Add a name to
+that set to hide another one.
+
+The API call is unauthenticated, which GitHub rate limits to 60 requests per
+hour per IP. A visitor who blows through that sees the snapshot instead, which
+is why the snapshot is worth refreshing now and then.
+
 ## Theming
 
 Every color, font, and width is a custom property in the `:root` block at the top
