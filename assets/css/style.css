@@ -1,0 +1,422 @@
+/* ==========================================================================
+   Curtis Darst — personal site
+   Single stylesheet. Edit the custom properties below to retheme the site.
+   ========================================================================== */
+
+:root {
+  /* Palette */
+  --bg:            #fbfaf7;
+  --bg-elev:       #ffffff;
+  --bg-subtle:     #f2f0eb;
+  --text:          #1f2328;
+  --text-muted:    #5b6470;
+  --text-faint:    #8b939d;
+  --accent:        #0f5e68;
+  --accent-soft:   #e3f0f1;
+  --border:        #e3e0d8;
+
+  /* Type */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+
+  /* Layout */
+  --measure: 1080px;
+  --gutter: 24px;
+  --radius: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:          #14171a;
+    --bg-elev:     #1b1f23;
+    --bg-subtle:   #22272c;
+    --text:        #e8eaed;
+    --text-muted:  #a8b1bb;
+    --text-faint:  #78828d;
+    --accent:      #5fc6cf;
+    --accent-soft: #10353a;
+    --border:      #2b3137;
+  }
+}
+
+/* --------------------------------------------------------------- reset -- */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img { max-width: 100%; display: block; }
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 120ms ease, color 120ms ease;
+}
+a:hover { border-bottom-color: currentColor; }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 0.4em;
+  letter-spacing: -0.01em;
+}
+
+p { margin: 0 0 1em; }
+p:last-child { margin-bottom: 0; }
+
+ul { margin: 0 0 1em; padding-left: 1.15em; }
+li { margin-bottom: 0.35em; }
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 16px;
+  z-index: 100;
+}
+.skip-link:focus { left: 8px; top: 8px; }
+
+/* ----------------------------------------------------------------- nav -- */
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: saturate(150%) blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+.site-nav__inner {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 12px var(--gutter);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.site-nav__brand {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  border: 0;
+  margin-right: auto;
+}
+
+.site-nav__links {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav__links a {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  border: 0;
+}
+.site-nav__links a:hover {
+  background: var(--bg-subtle);
+  color: var(--text);
+}
+
+/* --------------------------------------------------------------- shell -- */
+
+.wrap {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.section {
+  padding: 48px 0;
+  border-top: 1px solid var(--border);
+}
+.section:first-of-type { border-top: 0; }
+
+.section__title {
+  font-size: 0.78rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 22px;
+}
+
+/* ----------------------------------------------------------------- hero -- */
+
+.hero {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 40px;
+  align-items: start;
+  padding: 56px 0 48px;
+}
+
+.hero__portrait {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+}
+
+.hero__name {
+  font-size: clamp(2.1rem, 5vw, 2.9rem);
+  margin-bottom: 8px;
+}
+
+.hero__role {
+  font-size: 1.08rem;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.hero__affiliation {
+  font-size: 0.98rem;
+  color: var(--text-faint);
+  margin-bottom: 20px;
+}
+
+.hero__bio { max-width: 62ch; }
+
+/* --------------------------------------------------------------- links -- */
+
+.link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 22px;
+  padding: 0;
+  list-style: none;
+}
+
+.link-row li { margin: 0; }
+
+.link-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 13px;
+  font-size: 0.87rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-elev);
+  color: var(--text-muted);
+}
+.link-chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+.link-chip svg { width: 15px; height: 15px; flex: none; }
+
+/* ---------------------------------------------------------------- news -- */
+
+.news {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-left: 2px solid var(--border);
+}
+
+.news li {
+  position: relative;
+  padding: 0 0 18px 22px;
+  margin: 0;
+}
+.news li:last-child { padding-bottom: 0; }
+
+.news li::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.news__date {
+  display: block;
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+/* --------------------------------------------------------------- cards -- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.card p {
+  font-size: 0.94rem;
+  color: var(--text-muted);
+}
+
+/* ------------------------------------------------------------- entries -- */
+
+.entry {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 24px;
+  padding: 18px 0;
+  border-top: 1px dashed var(--border);
+}
+.entry:first-of-type { border-top: 0; padding-top: 0; }
+
+.entry__meta {
+  font-size: 0.85rem;
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
+  padding-top: 3px;
+}
+
+.entry__title {
+  font-family: var(--font-serif);
+  font-size: 1.12rem;
+  font-weight: 600;
+  margin: 0 0 2px;
+}
+
+.entry__org {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin: 0 0 8px;
+}
+
+.entry__body {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+.entry__body ul { margin-bottom: 0; }
+
+/* ---------------------------------------------------------------- tags -- */
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+}
+.tags li {
+  margin: 0;
+  padding: 4px 11px;
+  font-size: 0.82rem;
+  border-radius: 6px;
+  background: var(--bg-subtle);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+/* -------------------------------------------------------------- footer -- */
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  margin-top: 24px;
+  padding: 28px 0 44px;
+  font-size: 0.85rem;
+  color: var(--text-faint);
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* --------------------------------------------------------- placeholders -- */
+/* Visual marker for content still to be filled in. Delete the class from an
+   element once its real content is in place; then remove this rule. */
+
+.todo {
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--accent-soft),
+    var(--accent-soft) 8px,
+    transparent 8px,
+    transparent 16px
+  );
+  border-left: 3px solid var(--accent);
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+/* ------------------------------------------------------------ responsive -- */
+
+@media (max-width: 760px) {
+  body { font-size: 16px; }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 36px 0 32px;
+  }
+  .hero__portrait { width: 150px; height: 150px; }
+
+  .entry { grid-template-columns: 1fr; gap: 6px; }
+  .entry__meta { padding-top: 0; }
+
+  .section { padding: 36px 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
+
+@media print {
+  .site-nav, .site-footer, .link-row { display: none; }
+  body { background: #fff; color: #000; font-size: 11pt; }
+  .section { border-top: 1px solid #ccc; padding: 14pt 0; }
+}
