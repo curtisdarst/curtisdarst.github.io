@@ -34,8 +34,6 @@ primary buttons, and the rule under the hero.
 ## Still to add
 
 - **`Curtis-Darst-Resume.pdf`** — the nav button and two page buttons link to it.
-- **AWS Compute Blog URL** — the 2023 Application Composer post in `#speaking`
-  has no link yet; wrap the title in an `<a>` when you have the URL.
 
 ## Images
 

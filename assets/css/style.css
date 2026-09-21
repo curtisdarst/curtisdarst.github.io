@@ -217,3 +217,7 @@ section[id] { scroll-margin-top: calc(var(--header-height) + 1rem); }
 .cert-year { display: inline-block; margin-left: .35rem; font-size: .72rem; font-weight: 700; color: var(--ink-soft); background: var(--bg-alt); border: 1px solid var(--rule); border-radius: 99px; padding: .05rem .5rem; vertical-align: middle; }
 .edu-card .eyebrow { color: var(--accent); }
 .edu-card .edu-meta { margin-bottom: .7rem; }
+
+/* Linked publication titles get a sliding underline. */
+a.pub-title { color: var(--ink); text-decoration: none; background-image: linear-gradient(var(--accent), var(--accent)); background-size: 0% 1.5px; background-position: 0 100%; background-repeat: no-repeat; transition: background-size .2s, color .2s; }
+a.pub-title:hover, a.pub-title:focus-visible { color: var(--accent); background-size: 100% 1.5px; }
