@@ -33,14 +33,18 @@ primary buttons, and the rule under the hero.
 
 ## Still to add
 
-- **`assets/img/headshot.jpg`** — a square photo, 600×600 or larger. Currently
-  showing a placeholder silhouette. Once added, point the `hero-photo` `src` at
-  it and update the `og:image` / JSON-LD `image` paths.
-- **`images/og-card.jpg`** — 1200×630, for link previews in Slack, LinkedIn, and
-  iMessage. Until it exists, shared links show no image.
-- **`Curtis-Darst-Resume.pdf`** — the nav and two buttons link to it.
-- **AWS Compute Blog URL** — the 2023 Application Composer post in
-  `#speaking` has no link yet; wrap the title in an `<a>` when you have the URL.
+- **`Curtis-Darst-Resume.pdf`** — the nav button and two page buttons link to it.
+- **AWS Compute Blog URL** — the 2023 Application Composer post in `#speaking`
+  has no link yet; wrap the title in an `<a>` when you have the URL.
+
+## Images
+
+`assets/img/headshot.jpg` is the hero portrait (400x400). It displays at 280px,
+so it is slightly soft on high-DPI screens — swap in a 600x600 or larger crop at
+the same path when you have one and nothing else needs changing.
+
+`assets/img/og-card.jpg` is the 1200x630 social preview, generated from the
+headshot and the site palette. Regenerate it if the headline changes.
 
 ## Deliberately left off
 
