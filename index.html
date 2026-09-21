@@ -2,343 +2,567 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Curtis Darst</title>
-<meta name="description" content="Curtis Darst — technology and innovation management, cybersecurity, and software engineering.">
-<meta name="author" content="Curtis Darst">
-
-<!-- Open Graph / social preview -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Curtis Darst">
-<meta property="og:description" content="Technology and innovation management, cybersecurity, and software engineering.">
-<meta property="og:url" content="https://curtisdarst.github.io/">
-<!-- og:image expects a real photo at this path; add assets/img/profile.jpg before sharing links. -->
-<meta property="og:image" content="https://curtisdarst.github.io/assets/img/profile.jpg">
-<meta name="twitter:card" content="summary">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curtis Darst | Senior Solutions Architect — Generative AI &amp; Cloud Platforms</title>
+<meta name="description" content="Curtis Darst is a Senior Solutions Architect in AWS Worldwide Public Sector, working across generative AI, agentic systems, and ML platforms for higher education and EdTech. Ph.D. candidate in Computer Science.">
 <link rel="canonical" href="https://curtisdarst.github.io/">
-<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0e7c72">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://curtisdarst.github.io/">
+<meta property="og:title" content="Curtis Darst — Senior Solutions Architect, Generative AI &amp; Cloud Platforms">
+<meta property="og:description" content="Nineteen years across software engineering, infrastructure, and cloud architecture — the last twelve in education. Senior Solutions Architect, AWS Worldwide Public Sector.">
+<!-- Add a 1200x630 image at images/og-card.jpg to get a rich link preview. -->
+<meta property="og:image" content="https://curtisdarst.github.io/images/og-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Curtis Darst">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Curtis Darst — Senior Solutions Architect">
+<meta name="twitter:description" content="Generative AI, agentic systems, and ML platforms for higher education and EdTech.">
+<meta name="twitter:image" content="https://curtisdarst.github.io/images/og-card.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://curtisdarst.github.io/#curtis",
+      "name": "Curtis Darst",
+      "jobTitle": "Senior Solutions Architect",
+      "worksFor": { "@type": "Organization", "name": "Amazon Web Services" },
+      "url": "https://curtisdarst.github.io/",
+      "image": "https://curtisdarst.github.io/images/headshot.jpg",
+      "description": "Senior Solutions Architect in AWS Worldwide Public Sector, working across generative AI, agentic systems, and ML platforms for higher education and EdTech.",
+      "homeLocation": { "@type": "Place", "name": "Powell, Ohio" },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "Marshall University" },
+        { "@type": "CollegeOrUniversity", "name": "National University" }
+      ],
+      "knowsAbout": [
+        "Generative AI", "Agentic systems", "Amazon Bedrock", "Serverless architecture",
+        "Machine learning platforms", "Cloud migration", "Cybersecurity", "Education technology"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/curtisdarst",
+        "https://github.com/curtisdarst"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://curtisdarst.github.io/#website",
+      "url": "https://curtisdarst.github.io/",
+      "name": "Curtis Darst",
+      "publisher": { "@id": "https://curtisdarst.github.io/#curtis" }
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
-<!-- ===================================================== navigation === -->
-<nav class="site-nav" aria-label="Section navigation">
-  <div class="site-nav__inner">
-    <a class="site-nav__brand" href="#top">Curtis Darst</a>
-    <ul class="site-nav__links">
+<header class="site-header">
+  <nav class="nav" aria-label="Primary navigation">
+    <a class="nav-brand" href="#top">Curtis Darst</a>
+    <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation menu">☰</button>
+    <ul class="nav-links" id="primary-nav">
       <li><a href="#about">About</a></li>
-      <li><a href="#news">News</a></li>
-      <li><a href="#research">Focus</a></li>
       <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#writing">Writing</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#speaking">Speaking</a></li>
+      <li><a href="#certifications">Certifications</a></li>
       <li><a href="#contact">Contact</a></li>
+      <!-- Drop the PDF at Curtis-Darst-Resume.pdf to activate this link. -->
+      <li><a class="nav-cv" href="Curtis-Darst-Resume.pdf" target="_blank" rel="noopener">Résumé ↓</a></li>
     </ul>
-  </div>
-</nav>
+  </nav>
+</header>
 
-<main id="main">
-<div class="wrap" id="top">
+<main id="main-content">
 
-  <!-- =================================================== hero =========== -->
-  <header class="hero">
-    <img class="hero__portrait"
-         src="assets/img/profile.svg"
-         alt="Portrait of Curtis Darst"
-         width="220" height="220">
-
-    <div>
-      <h1 class="hero__name">Curtis Darst</h1>
-
-      <!-- EDIT: your headline, as you'd want it read first. -->
-      <p class="hero__role"><span class="todo">Your professional headline — e.g. “Principal Engineer, Cloud Infrastructure”</span></p>
-      <p class="hero__affiliation">
-        Doctoral student, Technology &amp; Innovation Management ·
-        School of Technology and Engineering, National University
+<!-- ======================================================== hero ======== -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="hero-kicker">Solutions Architect · Generative AI · Cloud Platforms</p>
+      <h1>Curtis Darst</h1>
+      <p class="hero-sub">
+        Senior Solutions Architect in AWS Worldwide Public Sector. Nineteen years across software
+        engineering, infrastructure, and cloud architecture — the last twelve in education — applying
+        <strong>generative and agentic AI</strong>, <strong>serverless architecture</strong>, and
+        <strong>ML data platforms</strong> to the systems that serve students.
       </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#experience">View Experience</a>
+        <a class="btn btn-ghost" href="#projects">See Projects</a>
+        <a class="btn btn-ghost" href="Curtis-Darst-Resume.pdf" target="_blank" rel="noopener">Download Résumé ↓</a>
+      </div>
+    </div>
+    <!-- Replace with a square photo — see README. -->
+    <img class="hero-photo" src="assets/img/profile.svg" alt="Portrait of Curtis Darst" width="280" height="280">
+  </div>
+</section>
 
-      <div class="hero__bio">
-        <!-- EDIT: two or three sentences. Who you are, what you work on, what
-             you're interested in next. This is the paragraph people actually read. -->
-        <p class="todo">
-          Short bio goes here: what you build, the problems you like working on,
-          and the thread that connects your work. Two to three sentences is the
-          right length — this sits above the fold and sets the tone for everything
-          below it.
+<!-- ======================================================= about ======== -->
+<section class="section" id="about">
+  <div class="section-inner">
+    <h2><span class="section-num">01</span> About</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          Curtis Darst is a Senior Solutions Architect in AWS Worldwide Public Sector, where he owns the
+          technical relationship for a portfolio of strategic EdTech ISVs worth <strong>$38.5M in annual
+          recurring revenue</strong>. Their products — learning management, student information systems,
+          assessment platforms, enrollment management, and adaptive courseware — reach K-12 districts,
+          universities, and state education agencies.
+        </p>
+        <p>
+          His work runs from whiteboard to production: generative AI and agentic architectures on Amazon
+          Bedrock, on-premises to cloud migrations, serverless modernization, and the data foundations that
+          make ML workloads possible. Before the strategic accounts role he was lead technical advisor to
+          research universities and liberal arts colleges across a Great Lakes and NJ/PA territory.
+        </p>
+        <p>
+          Before AWS, he built statewide K-12 data, assessment, and federal reporting systems for the
+          West Virginia Department of Education, directed engineering and server infrastructure at a market
+          research firm, and taught mathematics as an adjunct instructor. He is a Ph.D. candidate in Computer
+          Science researching how prompt engineering patterns affect the quality of LLM-generated code, and
+          lives in Powell, Ohio, just north of The Ohio State University campus.
         </p>
       </div>
-
-      <ul class="link-row">
-        <li>
-          <a class="link-chip" href="mailto:curtis.darst@gmail.com">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/>
-            </svg>
-            Email
-          </a>
-        </li>
-        <li>
-          <a class="link-chip" href="https://github.com/curtisdarst" rel="me noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.4 5 18.4 5.3 18.4 5.3c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/>
-            </svg>
-            GitHub
-          </a>
-        </li>
-        <li>
-          <a class="link-chip" href="https://www.linkedin.com/in/curtisdarst/" rel="me noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM2.9 21h4.2V9.7H2.9V21Zm7.3 0h4.2v-6.3c0-1.7.3-3.3 2.4-3.3 2 0 2.1 1.9 2.1 3.4V21h4.2v-7c0-3.6-.8-6.4-5-6.4-2 0-3.4 1.1-4 2.2h-.1V9.7h-4V21Z"/>
-            </svg>
-            LinkedIn
-          </a>
-        </li>
-        <!-- EDIT: drop any of these that don't apply; add Scholar / ORCID / X if they do. -->
-        <li>
-          <!-- Drop your CV PDF at assets/curtis-darst-cv.pdf, or delete this chip. -->
-          <a class="link-chip" href="assets/curtis-darst-cv.pdf">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/>
-            </svg>
-            CV
-          </a>
-        </li>
-      </ul>
+      <aside class="about-facts" aria-label="Professional details">
+        <div class="fact"><span class="fact-label">Focus</span><span>Generative &amp; agentic AI · Cloud-native architecture · ML platforms</span></div>
+        <div class="fact"><span class="fact-label">Methods</span><span>Serverless &amp; event-driven design · Migration and modernization · Well-architected reviews</span></div>
+        <div class="fact"><span class="fact-label">Platforms</span><span>Amazon Bedrock · SageMaker AI · Lambda, EKS, ECS, EC2 · Aurora, DynamoDB · Python</span></div>
+        <div class="fact"><span class="fact-label">Domain</span><span>Higher education · K-12 · EdTech · Public sector · FERPA &amp; COPPA</span></div>
+        <div class="fact"><span class="fact-label">Based in</span><span>Powell, Ohio</span></div>
+      </aside>
     </div>
-  </header>
+  </div>
+</section>
 
-  <!-- ================================================== about =========== -->
-  <section class="section" id="about">
-    <h2 class="section__title">About</h2>
-    <!-- EDIT: the longer version of the bio — background, how you got here,
-         what you're doing now, and anything personal you want to include. -->
-    <p class="todo">
-      A longer paragraph than the intro above. Where your career started, the
-      arc it has taken, and what you're focused on now. If you're mid-doctorate,
-      this is a natural place to say what you're studying and why.
+<!-- ================================================== experience ======== -->
+<section class="section section-alt" id="experience">
+  <div class="section-inner">
+    <h2><span class="section-num">02</span> Experience</h2>
+    <p class="section-lede">
+      Nineteen years spanning statewide public-sector systems, in-house engineering leadership, and
+      customer-facing cloud architecture.
     </p>
-    <p class="todo">
-      A second paragraph for the human parts — where you live, what you do away
-      from work, what you'd be glad to be contacted about.
-    </p>
-  </section>
 
-  <!-- =================================================== news =========== -->
-  <section class="section" id="news">
-    <h2 class="section__title">News</h2>
-    <!-- EDIT: newest first. Keep 4–6 items; retire old ones as you add new. -->
-    <ul class="news">
+    <ol class="role-list">
+
+      <li class="role">
+        <span class="role-dates">Oct 2025 — Present</span>
+        <div>
+          <h3 class="role-title">Senior Solutions Architect, Education Technology Strategic Accounts</h3>
+          <p class="role-org">Amazon Web Services, Worldwide Public Sector · Remote — Powell, OH</p>
+          <div class="role-body">
+            <ul>
+              <li>Own technical engagement and outcomes for a portfolio of strategic EdTech ISVs worth <strong>$38.5M in annual recurring revenue</strong>, from discovery through production scale.</li>
+              <li>Lead architecture and design for generative AI applications on Amazon Bedrock — agentic patterns, retrieval, evaluations, and guardrails for workloads handling student data. Recent work includes a multi-agent system built with the Strands Agents SDK and Bedrock AgentCore, taken from whiteboard through working prototype and hand-off.</li>
+              <li>Run technical deep-dives, whiteboarding sessions, and executive briefings for CTOs, VPs of Engineering, and platform architects.</li>
+              <li>Designed a high-volume serverless pipeline for processing and delivering instruction files across development, QA, and production, built for horizontal scale, fault tolerance, and cost efficiency at each stage.</li>
+              <li>Partner on the security and data-governance decisions behind multi-tenant partitioning and per-district data isolation under FERPA, COPPA, and state student-data-privacy law.</li>
+              <li>Co-presented <em>DVT312: Accelerate Multi-Step SDLC with Kiro</em> at AWS Summit Washington, DC (2026).</li>
+            </ul>
+            <ul class="role-stack">
+              <li>Amazon Bedrock</li>
+              <li>AgentCore</li>
+              <li>Strands Agents SDK</li>
+              <li>Lambda</li>
+              <li>EKS / ECS</li>
+              <li>Aurora / DynamoDB</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li class="role">
+        <span class="role-dates">Jul 2022 — Oct 2025</span>
+        <div>
+          <h3 class="role-title">Senior Solutions Architect, Education</h3>
+          <p class="role-org">Amazon Web Services, Worldwide Public Sector · Remote — Powell, OH</p>
+          <div class="role-body">
+            <ul>
+              <li>Lead technical advisor to higher-education institutions across a Great Lakes and NJ/PA territory, including one R1 and three R2 research universities — Lehigh University, Stevens Institute of Technology, Montclair State University, and Seton Hall University — plus Lafayette College and the University of Maryland Center for Environmental Science.</li>
+              <li>Owned architecture, technical briefings, and adoption strategy across research computing, student systems, and administrative workloads, for audiences from developers up to CIOs.</li>
+              <li>Guided migrations of legacy institutional applications to cloud-native and serverless patterns, and established the data structures and pipelines that made those workloads ML- and AI-ready.</li>
+              <li>Led student hackathons at partner institutions, including multiple years at Lehigh University and Bergen Community College — event design, technical mentoring, and judging. Earlier served as support staff and judge for HackOHI/O in 2021.</li>
+              <li>Co-authored <em>Visually design your application with AWS Application Composer</em> on the AWS Compute Blog (September 2023), covering the service's expansion from 13 to all 1,134 CloudFormation resource types.</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li class="role">
+        <span class="role-dates">Mar 2020 — Jul 2022</span>
+        <div>
+          <h3 class="role-title">Solutions Architect, Education</h3>
+          <p class="role-org">Amazon Web Services, Worldwide Public Sector · Remote</p>
+          <div class="role-body">
+            <ul>
+              <li>Supported East Coast colleges and universities with architecture design and technical engagements for their AWS workloads.</li>
+              <li>Joined the Serverless Technical Field Community and earned AWS Tier 2 Certified Speaker status. Promoted to Senior Solutions Architect in July 2022.</li>
+            </ul>
+            <p style="margin-top:.9rem">
+              <strong>Across all three roles:</strong> Technical Field Community member for Serverless,
+              Serverless Compute&nbsp;+&nbsp;APIs, and Application Integration. AI-Driven Development Lifecycle
+              (AI-DLC) Ambassador. L400 focus-area recognition in Generative AI and Amazon MWAA; L300
+              competencies in Blog Author and Mentoring. Currently mentoring 10 solutions architects.
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li class="role">
+        <span class="role-dates">Feb 2016 — Mar 2020</span>
+        <div>
+          <h3 class="role-title">Coordinator [Developer], Office of Data Management and Analysis</h3>
+          <p class="role-org">West Virginia Department of Education · Charleston, WV</p>
+          <div class="role-body">
+            <ul>
+              <li>Developed and maintained applications for the statewide longitudinal data system, tracking records for <strong>250,000 students</strong> across years, districts, and programs.</li>
+              <li>Built the reporting pipelines carrying state education data to the federal level, meeting U.S. Department of Education submission requirements and deadlines.</li>
+              <li>Led integration of WVEIS, the statewide education information system, with assessment and student-access platforms including AIR:TIDE and Golden Horseshoe — defining field requirements, data-sharing contracts, and accommodation-information flows.</li>
+              <li>Built and rolled out the applications supporting testing accommodations for the West Virginia General Summative Assessment, determining how <strong>50,000 students</strong> with documented needs accessed statewide testing.</li>
+              <li>Technical point of contact for program offices, RESAs, and local stakeholders across all <strong>56 school districts</strong> in the state, and presenter at statewide District Test Coordinators meetings.</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li class="role">
+        <span class="role-dates">Oct 2014 — Feb 2016</span>
+        <div>
+          <h3 class="role-title">Programmer</h3>
+          <p class="role-org">West Virginia Department of Education · Charleston, WV</p>
+          <div class="role-body">
+            <p>Developed software applications supporting statewide education data systems in ColdFusion and related toolsets. Promoted to Coordinator after 16 months.</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="role">
+        <span class="role-dates">May 2007 — Sep 2014</span>
+        <div>
+          <h3 class="role-title">Director of Web Development and Support Systems</h3>
+          <p class="role-org">McMillion Research · Charleston, WV</p>
+          <div class="role-body">
+            <ul>
+              <li>Directed an in-house team of software engineers over seven years, owning both engineering practice and delivery of custom client work.</li>
+              <li>Drove the firm's <strong>ISO 27001 certification</strong> from inception through final audit, opening the door to customer work requiring a certified information security management system.</li>
+              <li>Led consolidation of <strong>100+ physical servers</strong> onto a VMware virtualization platform, cutting hardware and operating cost while improving reliability.</li>
+              <li>Built and operated the server and network infrastructure behind the firm's research delivery systems; analyzed panel datasets covering millions of respondents.</li>
+              <li>Worked directly with the C-suite and VPs to raise development output and find efficiencies across the firm's service offerings.</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li class="role">
+        <span class="role-dates">Aug 2008 — May 2010</span>
+        <div>
+          <h3 class="role-title">Adjunct Instructor, Mathematics</h3>
+          <p class="role-org">Mountwest Community &amp; Technical College / Marshall CTC · Huntington, WV</p>
+          <div class="role-body">
+            <p>Taught mathematics to community and technical college students, concurrent with full-time work at McMillion Research.</p>
+          </div>
+        </div>
+      </li>
+
+    </ol>
+
+    <div class="section-actions">
+      <a class="btn btn-primary" href="https://www.linkedin.com/in/curtisdarst/" target="_blank" rel="noopener">Full History on LinkedIn ↗</a>
+      <a class="btn btn-ghost" href="Curtis-Darst-Resume.pdf" target="_blank" rel="noopener">Download Résumé ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================================================== projects ======== -->
+<section class="section" id="projects">
+  <div class="section-inner">
+    <h2><span class="section-num">03</span> Projects</h2>
+    <p class="section-lede">
+      Benchmarks, prototypes, and practitioner guidance — most of it built to answer a question a customer
+      actually asked.
+    </p>
+
+    <div class="repo-grid" aria-label="Featured projects">
+
+      <a class="repo-card" href="https://github.com/curtisdarst/sagemaker-modernbert-testing" target="_blank" rel="noopener">
+        <div class="repo-head">
+          <span class="repo-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 3v18h18"/><path d="M7 15l3.5-4 3 2.2L21 6"/><path d="M16.5 6H21v4.5"/>
+            </svg>
+          </span>
+          <div class="repo-name">ModernBERT Inference Benchmarking</div>
+        </div>
+        <span class="project-tag">Open source · MIT-0</span>
+        <p class="repo-desc">
+          Exports one model to four formats and deploys it across nine SageMaker AI configurations — CPU, GPU,
+          Inferentia2, and Serverless — measuring P50/P95/P99 latency, throughput under concurrency, and cold
+          start, then reporting cost per million inferences. Cost varies by <strong>more than 40&times;</strong>
+          across configurations serving the identical model. Includes automated teardown with verified deletion,
+          a runtime cost gate, and 166 unit tests.
+        </p>
+        <div class="repo-meta"><span>View on GitHub ↗</span></div>
+      </a>
+
+      <article class="repo-card">
+        <div class="repo-head">
+          <span class="repo-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="5" r="2.4"/><circle cx="5" cy="18" r="2.4"/><circle cx="19" cy="18" r="2.4"/>
+              <path d="M12 7.4v4.2M12 11.6 6.6 16.2M12 11.6l5.4 4.6"/>
+            </svg>
+          </span>
+          <div class="repo-name">Multi-Agent EdTech System</div>
+        </div>
+        <span class="project-tag">Prototype · Bedrock AgentCore</span>
+        <p class="repo-desc">
+          A multi-agent system built with the Strands Agents SDK and Amazon Bedrock AgentCore, taken from
+          whiteboard through working prototype and hand-off — covering agentic patterns, retrieval,
+          evaluations, and guardrails for workloads that handle student data.
+        </p>
+        <div class="repo-meta"><span>Customer engagement · not public</span></div>
+      </article>
+
+      <article class="repo-card">
+        <div class="repo-head">
+          <span class="repo-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M13 2 4.5 13H11l-1 9 8.5-11H12l1-9Z"/>
+            </svg>
+          </span>
+          <div class="repo-name">Serverless Instruction Pipeline</div>
+        </div>
+        <span class="project-tag">Architecture</span>
+        <p class="repo-desc">
+          A high-volume serverless pipeline for processing and delivering instruction files across
+          development, QA, and production environments — designed for horizontal scale, fault tolerance, and
+          cost and performance efficiency at each stage.
+        </p>
+        <div class="repo-meta"><span>Customer engagement · not public</span></div>
+      </article>
+
+      <article class="repo-card">
+        <div class="repo-head">
+          <span class="repo-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 3l7.5 3.5v5c0 4.4-3.1 8.4-7.5 9.5-4.4-1.1-7.5-5.1-7.5-9.5v-5L12 3Z"/><path d="m9 12 2 2 4-4"/>
+            </svg>
+          </span>
+          <div class="repo-name">MCP Supply-Chain Security</div>
+        </div>
+        <span class="project-tag">Practitioner guidance</span>
+        <p class="repo-desc">
+          Guidance for enterprise leaders on data-flow control and vetting risk when installing Model Context
+          Protocol servers from public repositories — written for the teams deciding what gets into their
+          developer toolchain.
+        </p>
+        <div class="repo-meta"><span>Guidance for engineering leadership</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- =================================================== education ======== -->
+<section class="section section-alt" id="education">
+  <div class="section-inner">
+    <h2><span class="section-num">04</span> Education</h2>
+
+    <article class="edu-hero">
+      <div>
+        <p class="edu-flag">Candidate · Expected Dec 2027</p>
+        <h3>Ph.D. in Computer Science, AI / ML Focus</h3>
+        <p class="edu-meta">Northcentral University (now National University) · San Diego, CA · Aug 2022 —</p>
+        <p>
+          <strong>Dissertation:</strong> <em>The Effect of Prompt Engineering Patterns on LLM-Generated Code
+          Quality.</em> A quantitative quasi-experimental repeated-measures study producing 525 code samples
+          across seven models, five prompt patterns, and fifteen Python scenarios — testing whether prompting
+          technique measurably affects weighted defect density and cyclomatic complexity, and whether that
+          effect differs between traditional single-pass models and extended-thinking reasoning architectures.
+        </p>
+        <p>Cumulative doctoral GPA 3.90 across 39 credits.</p>
+        <ul class="coursework">
+          <li>Artificial Intelligence</li>
+          <li>Data Mining</li>
+          <li>Distributed Algorithms &amp; Parallel Computing</li>
+          <li>Secure Software Development</li>
+          <li>Principles of Cybersecurity</li>
+          <li>Statistics with Technology Applications</li>
+          <li>Software Engineering</li>
+          <li>Databases &amp; Business Intelligence</li>
+          <li>Computer Networks &amp; Mobile Computing</li>
+          <li>Research Design &amp; Methodology</li>
+        </ul>
+      </div>
+    </article>
+
+    <div class="edu-grid">
+      <article class="edu-card">
+        <p class="eyebrow">Marshall University · 2013</p>
+        <h3>M.S. Information Systems</h3>
+        <p class="edu-meta">Computer Software Engineering · Huntington, WV</p>
+        <p>
+          Comprehensive project: an Augmentative and Alternative Communication (AAC) iPad application for
+          users with speech and language disabilities, spanning both software development and project
+          management.
+        </p>
+      </article>
+
+      <article class="edu-card">
+        <p class="eyebrow">Marshall University · 2007</p>
+        <h3>B.S. Computer &amp; Information Technology</h3>
+        <p class="edu-meta">Software engineering emphasis · Mathematics minor · Huntington, WV</p>
+        <p>
+          Senior project: FARM Assessment Resources Management System, an application for tracking livestock,
+          income, and expenses that produced algorithm-driven planning output for farm operations.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================================================== speaking ======== -->
+<section class="section" id="speaking">
+  <div class="section-inner">
+    <h2><span class="section-num">05</span> Speaking &amp; Writing</h2>
+    <p class="section-lede">
+      AWS Tier 2 Certified Speaker and published AWS blog author. Presenter at AWS re:Invent, re:Inforce, and
+      four AWS Summits, across serverless, security, and developer experience.
+    </p>
+
+    <ol class="pub-list">
       <li>
-        <span class="news__date">Sep 2026</span>
-        <span class="todo">Launched this site.</span>
+        <span class="pub-year">2026</span>
+        <div>
+          <span class="pub-title">DVT312: Accelerate Multi-Step SDLC with Kiro</span> —
+          <span class="pub-venue">code talk on agentic AI-assisted development workflows, AWS Summit Washington, DC.</span>
+        </div>
       </li>
       <li>
-        <span class="news__date">TBD</span>
-        <span class="todo">A recent milestone — a talk, a paper, a certification, a release.</span>
+        <span class="pub-year">2025</span>
+        <div>
+          <span class="pub-title">Collaborations and Partnerships in Cybersecurity</span> —
+          <span class="pub-venue">panelist, Grand Valley State University Innovation Day.</span>
+        </div>
       </li>
       <li>
-        <span class="news__date">TBD</span>
-        <span class="todo">Another item. Short, one line each, link where there's something to link to.</span>
+        <span class="pub-year">2023</span>
+        <div>
+          <!-- Paste the post URL into href when you have it handy. -->
+          <span class="pub-title">Visually design your application with AWS Application Composer</span> —
+          <span class="pub-venue">AWS Compute Blog, co-authored with a Senior Technical Account Manager.</span>
+        </div>
       </li>
-    </ul>
-  </section>
-
-  <!-- =============================================== research =========== -->
-  <section class="section" id="research">
-    <h2 class="section__title">Focus Areas</h2>
-    <div class="grid">
-      <article class="card">
-        <h3>Cybersecurity</h3>
-        <p class="todo">
-          What you do in this area and what you're exploring — e.g. security
-          architecture, contingency and resilience planning, controls frameworks.
-        </p>
-      </article>
-      <article class="card">
-        <h3>Software Engineering</h3>
-        <p class="todo">
-          Your angle on building software — quality practices, secure coding,
-          the systems and scale you work at.
-        </p>
-      </article>
-      <article class="card">
-        <h3>Networks &amp; Infrastructure</h3>
-        <p class="todo">
-          Network design, cloud infrastructure, reliability — whichever of these
-          is actually yours.
-        </p>
-      </article>
-    </div>
-
-    <!-- EDIT: keywords people might search you by. -->
-    <ul class="tags">
-      <li class="todo">Skill</li>
-      <li class="todo">Technology</li>
-      <li class="todo">Platform</li>
-      <li class="todo">Methodology</li>
-      <li class="todo">Domain</li>
-    </ul>
-  </section>
-
-  <!-- ============================================= experience =========== -->
-  <section class="section" id="experience">
-    <h2 class="section__title">Experience</h2>
-
-    <!-- EDIT: one .entry block per role, most recent first.
-         Copy a block to add another. -->
-    <div class="entry">
-      <div class="entry__meta"><span class="todo">20XX — Present</span></div>
-      <div>
-        <h3 class="entry__title"><span class="todo">Job Title</span></h3>
-        <p class="entry__org"><span class="todo">Company · Location</span></p>
-        <div class="entry__body">
-          <ul>
-            <li class="todo">What you own, in one line.</li>
-            <li class="todo">An accomplishment with a number attached to it.</li>
-            <li class="todo">The technologies or teams involved.</li>
-          </ul>
+      <li>
+        <span class="pub-year">2023</span>
+        <div>
+          <span class="pub-title">Building Your First Serverless Web Application</span> —
+          <span class="pub-venue">CodeMash, Sandusky, OH.</span>
         </div>
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="entry__meta"><span class="todo">20XX — 20XX</span></div>
-      <div>
-        <h3 class="entry__title"><span class="todo">Job Title</span></h3>
-        <p class="entry__org"><span class="todo">Company · Location</span></p>
-        <div class="entry__body">
-          <ul>
-            <li class="todo">What you owned there.</li>
-            <li class="todo">A result worth keeping on the page.</li>
-          </ul>
+      </li>
+      <li>
+        <span class="pub-year">2022</span>
+        <div>
+          <span class="pub-title">Decouple and Scale Applications with Queues</span> —
+          <span class="pub-venue">CodeMash, Sandusky, OH.</span>
         </div>
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="entry__meta"><span class="todo">20XX — 20XX</span></div>
-      <div>
-        <h3 class="entry__title"><span class="todo">Job Title</span></h3>
-        <p class="entry__org"><span class="todo">Company · Location</span></p>
-        <div class="entry__body">
-          <p class="todo">Earlier roles can be a single line each.</p>
+      </li>
+      <li>
+        <span class="pub-year">2022</span>
+        <div>
+          <span class="pub-title">Intro to AWS</span> —
+          <span class="pub-venue">Cloud Innovation Conference.</span>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================== education =========== -->
-  <section class="section" id="education">
-    <h2 class="section__title">Education</h2>
-
-    <div class="entry">
-      <div class="entry__meta">In progress</div>
-      <div>
-        <h3 class="entry__title">Doctoral studies, Technology &amp; Innovation Management</h3>
-        <p class="entry__org">School of Technology and Engineering, National University</p>
-        <div class="entry__body">
-          <p>
-            Coursework across cybersecurity, software engineering, and computer
-            networks — including principles of cybersecurity, software quality
-            and secure development practices, and network and mobile computing
-            design.
-          </p>
+      </li>
+      <li>
+        <span class="pub-year">2019</span>
+        <div>
+          <span class="pub-title">Serverless Compute with AWS and .NET Core</span> —
+          <span class="pub-venue">Raleigh Code Camp, on migrating legacy application code into serverless architectures with AWS Lambda. Selected from open CFP.</span>
         </div>
-      </div>
-    </div>
+      </li>
+    </ol>
+  </div>
+</section>
 
-    <div class="entry">
-      <div class="entry__meta"><span class="todo">20XX</span></div>
-      <div>
-        <h3 class="entry__title"><span class="todo">Degree</span></h3>
-        <p class="entry__org"><span class="todo">Institution</span></p>
-      </div>
-    </div>
+<!-- =============================================== certifications ======= -->
+<section class="section section-alt" id="certifications">
+  <div class="section-inner">
+    <h2><span class="section-num">06</span> Certifications</h2>
+    <p class="section-lede">Eight active AWS certifications across the foundational, associate, and professional tiers.</p>
 
-    <!-- EDIT: certifications, if you hold any. Otherwise delete this block. -->
-    <div class="entry">
-      <div class="entry__meta">Certifications</div>
-      <div>
-        <div class="entry__body">
-          <ul>
-            <li class="todo">Certification name — issuing body, year</li>
-            <li class="todo">Certification name — issuing body, year</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- =============================================== projects =========== -->
-  <section class="section" id="projects">
-    <h2 class="section__title">Projects</h2>
-    <div class="grid">
-      <article class="card">
-        <h3><span class="todo">Project name</span></h3>
-        <p class="todo">
-          One or two sentences: what it does, why you built it, what it's built
-          with. Link the title to the repo or the live thing.
-        </p>
+    <div class="edu-grid">
+      <article class="edu-card">
+        <p class="eyebrow">AWS Certifications</p>
+        <h3>Eight active</h3>
+        <ul>
+          <li>Generative AI Developer – Professional <span class="cert-year">2026</span></li>
+          <li>Solutions Architect – Professional <span class="cert-year">2021</span></li>
+          <li>Machine Learning Engineer – Associate <span class="cert-year">2025</span></li>
+          <li>Developer – Associate <span class="cert-year">2025</span></li>
+          <li>SysOps Administrator – Associate <span class="cert-year">2024</span></li>
+          <li>Solutions Architect – Associate <span class="cert-year">2017</span></li>
+          <li>AI Practitioner <span class="cert-year">2024</span></li>
+          <li>Cloud Practitioner <span class="cert-year">2020</span></li>
+        </ul>
       </article>
-      <article class="card">
-        <h3><span class="todo">Project name</span></h3>
-        <p class="todo">Same again — keep these short and concrete.</p>
-      </article>
-      <article class="card">
-        <h3><span class="todo">Project name</span></h3>
-        <p class="todo">Three to six projects reads well here.</p>
+
+      <article class="edu-card">
+        <p class="eyebrow">Accreditations &amp; Recognition</p>
+        <h3>AWS Technical Field Community</h3>
+        <ul>
+          <li>Technical Field Community: Serverless; Serverless Compute&nbsp;+&nbsp;APIs; Application Integration</li>
+          <li>AI-Driven Development Lifecycle (AI-DLC) Ambassador</li>
+          <li>Tier 2 Certified Speaker · Blog Author (L300) · Mentoring (L300)</li>
+          <li>Focus areas: Generative AI (L400), Amazon MWAA (L400)</li>
+          <li>AWS Industry Accreditation: Education (Intermediate and Foundational)</li>
+          <li>AWS AI Accreditation (Foundational)</li>
+          <li>Early Adopter recognition for Generative AI Developer – Professional and AI Practitioner, earned in the pre-general-release exam cohorts</li>
+        </ul>
       </article>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ================================================ writing =========== -->
-  <section class="section" id="writing">
-    <h2 class="section__title">Writing &amp; Talks</h2>
-    <!-- EDIT: papers, posts, talks. Delete the section if it isn't relevant yet. -->
-    <div class="entry">
-      <div class="entry__meta"><span class="todo">20XX</span></div>
-      <div>
-        <h3 class="entry__title"><span class="todo">Title of the piece</span></h3>
-        <p class="entry__org"><span class="todo">Where it appeared</span></p>
-        <div class="entry__body">
-          <p class="todo">A sentence on what it argues or covers.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================================================ contact =========== -->
-  <section class="section" id="contact">
-    <h2 class="section__title">Contact</h2>
-    <p>
-      The fastest way to reach me is email —
-      <a href="mailto:curtis.darst@gmail.com">curtis.darst@gmail.com</a>.
-      I'm also on <a href="https://www.linkedin.com/in/curtisdarst/" rel="me noopener">LinkedIn</a>
-      and <a href="https://github.com/curtisdarst" rel="me noopener">GitHub</a>.
+<!-- ===================================================== contact ======== -->
+<section class="section section-contact" id="contact">
+  <div class="section-inner">
+    <h2><span class="section-num">07</span> Contact</h2>
+    <p class="contact-lede">
+      For architecture conversations, speaking invitations, mentoring, or research collaboration:
     </p>
-  </section>
+    <div class="contact-links">
+      <a class="btn btn-primary" id="contact-email" data-user="curtis.darst" data-domain="gmail.com" href="mailto:curtis.darst@gmail.com">curtis.darst [at] gmail.com</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/curtisdarst/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-ghost" href="https://github.com/curtisdarst" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
 
-  <footer class="site-footer">
-    <span>© <span id="year">2026</span> Curtis Darst</span>
-    <span>Built with plain HTML and CSS · Hosted on GitHub Pages</span>
-  </footer>
-
-</div>
 </main>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+<footer class="site-footer">
+  <p>© <span id="year">2026</span> Curtis Darst · Built with plain HTML · No advertising or behavioral tracking.</p>
+</footer>
 
+<script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -1,44 +1,51 @@
 # curtisdarst.github.io
 
-Personal site for Curtis Darst, served by GitHub Pages at
-<https://curtisdarst.github.io/>.
+Personal site for Curtis Darst — Senior Solutions Architect, AWS Worldwide Public
+Sector. Served by GitHub Pages at <https://curtisdarst.github.io/>.
 
 ## What's here
 
 ```
 index.html            the whole page — every section lives here
-assets/css/style.css  the only stylesheet; theme colors are at the top
-assets/img/           profile photo, favicon
+assets/css/style.css  the only stylesheet; theme tokens are in :root at the top
+assets/js/script.js   mobile nav, footer year, email assembled at runtime
+assets/img/           profile image
+favicon.svg
 ```
 
-No build step, no dependencies, no Jekyll. GitHub Pages serves the files as
-they are, so anything you commit to the default branch is live within a minute.
+No build step, no dependencies, no Jekyll. GitHub Pages serves the files as they
+are, so anything committed to the default branch is live within a minute.
 
-## Editing
+## Sections
 
-Content lives in `index.html`, section by section, with `<!-- EDIT: ... -->`
-comments explaining what each one wants.
+`01 About` · `02 Experience` · `03 Projects` · `04 Education` ·
+`05 Speaking & Writing` · `06 Certifications` · `07 Contact`
 
-Anything still to be written is wrapped in `class="todo"`, which renders with a
-striped highlight so unfinished copy is obvious on the page. Replace the text
-and delete the `todo` class as you go; once nothing carries it, delete the
-`.todo` rule from `style.css`.
-
-To add another job, degree, or article, copy an existing `.entry` block. To add
-a project or focus area, copy a `.card`.
+To add a role, copy an `<li class="role">` block in `#experience`. For a project,
+copy a `.repo-card` — use `<a>` when it links somewhere, `<article>` when it
+doesn't. Talks and posts are `<li>` entries in the `.pub-list`.
 
 ## Theming
 
-Every color, font, and width is a custom property in the `:root` block at the
-top of `assets/css/style.css`. Dark mode is a second block of the same
-properties under `prefers-color-scheme: dark` — change a color in both places
-and the whole page follows.
+Every color, font, and width is a custom property in the `:root` block at the top
+of `assets/css/style.css`. The accent gradient (`--grad`) drives the h1, the
+primary buttons, and the rule under the hero.
 
-## Profile photo
+## Still to add
 
-`assets/img/profile.svg` is a placeholder. Drop a square image in as
-`assets/img/profile.jpg` (600×600 or larger) and point the `hero__portrait`
-`src` at it.
+- **`assets/img/headshot.jpg`** — a square photo, 600×600 or larger. Currently
+  showing a placeholder silhouette. Once added, point the `hero-photo` `src` at
+  it and update the `og:image` / JSON-LD `image` paths.
+- **`images/og-card.jpg`** — 1200×630, for link previews in Slack, LinkedIn, and
+  iMessage. Until it exists, shared links show no image.
+- **`Curtis-Darst-Resume.pdf`** — the nav and two buttons link to it.
+- **AWS Compute Blog URL** — the 2023 Application Composer post in
+  `#speaking` has no link yet; wrap the title in an `<a>` when you have the URL.
+
+## Deliberately left off
+
+Your phone number is on the résumé but not on the page — a public GitHub Pages
+site is indexed and scraped. Add it to the contact section if you want it there.
 
 ## Preview locally
 
@@ -46,8 +53,3 @@ and the whole page follows.
 python3 -m http.server 8000
 # then open http://localhost:8000
 ```
-
-## Still to add
-
-- `assets/img/profile.jpg` — a real photo (also what the social preview points at)
-- `assets/curtis-darst-cv.pdf` — the CV the header chip links to, or delete that chip
