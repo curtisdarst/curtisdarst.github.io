@@ -31,10 +31,6 @@ Every color, font, and width is a custom property in the `:root` block at the to
 of `assets/css/style.css`. The accent gradient (`--grad`) drives the h1, the
 primary buttons, and the rule under the hero.
 
-## Still to add
-
-- **`Curtis-Darst-Resume.pdf`** — the nav button and two page buttons link to it.
-
 ## Images
 
 `assets/img/headshot.jpg` is the hero portrait (400x400). It displays at 280px,
